@@ -105,7 +105,7 @@ const TeamMembers = () => {
                                 key={member.id}
                                 className="flex justify-center items-center transition-all duration-300  transform hover:scale-105"
                             >
-                                <div className="md:w-64 md:h-64 w-40 h-40 object-cover bg-[rgb(63,63,63)] md:border-none border border-[rgb(245,124,0)]">
+                                <div className="md:w-64 md:h-64 w-48 h-48 object-cover bg-[rgb(63,63,63)] md:border-none border border-gray-400 border-opacity-30">
                                     <div className="text-center text-white p-2 space-y-4 overflow-hidden mt-1">
                                         <h1 className="text-2xl font-extrabold text-green-300 font-cursive">{member.name}</h1>
                                         <h2 className="font-semibold text-white text-opacity-50">{member.designation}</h2>
@@ -118,7 +118,7 @@ const TeamMembers = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="md:w-64 md:h-64 w-40 h-40 object-cover ">
+                                <div className="md:w-64 md:h-64 w-48 h-48 object-cover ">
                                     <img
                                         className="w-full h-full "
                                         src={member.Image}
@@ -133,14 +133,14 @@ const TeamMembers = () => {
                     <div className="md:flex justify-normal overflow-hidden">
                         {secondHalf.map((member) => (
                             <div key={member.id} className="flex justify-center items-center transition-all duration-300  transform hover:scale-105">
-                                <div className="md:w-64 md:h-64 w-40 h-40 object-cover">
+                                <div className="md:w-64 md:h-64 w-48 h-48 object-cover">
                                     <img
                                         className="w-full h-full"
                                         src={member.Image}
                                         alt={member.name}
                                     />
                                 </div>
-                                <div className="md:w-64 md:h-64 w-40 h-40 object-cover bg-[rgb(38,38,38)]">
+                                <div className="md:w-64 md:h-64 w-48 h-48 object-cover bg-[rgb(38,38,38)] md:border-none border border-gray-400 border-opacity-30">
                                     <div className="text-center text-white p-2 space-y-4 mt-1">
                                         <h1 className="text-2xl font-extrabold text-green-300 font-cursive">{member.name}</h1>
                                         <h2 className="font-semibold text-white text-opacity-70">{member.designation}</h2>
