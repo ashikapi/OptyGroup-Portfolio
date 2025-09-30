@@ -27,7 +27,7 @@ const TeamTrial = () => {
     const secondHalf = expertInfo.slice(halfLength);
 
     return (
-        <div className='flex justify-center items-center pt-20 pb-20'>
+        <div className='flex justify-center items-center pt-20 pb-20 md:ml-0 md:mr-0 ml-10 mr-10'>
             <div>
                 {/* Title Section */}
                 <div className='mb-10 space-y-4'>
@@ -40,7 +40,7 @@ const TeamTrial = () => {
                     {firstHalf.map((member) => (
                         <div key={member.id} className="flex justify-center items-center hover:border-[rgb(245,124,0)] hover:border-transparent hover:shadow-inner transition-all duration-300">
                             {/* "even" layout: Image on the left, text on the right */}
-                            <div className="md:w-60 md:h-60 w-40 h-40 object-cover bg-[rgb(63,63,63)] md:border-none border border-[rgb(245,124,0)]">
+                            <div className="md:w-60 md:h-60 w-48 h-48 object-cover bg-[rgb(63,63,63)] md:border-none border border-[rgb(245,124,0)]">
                                 <div className="text-center text-white p-2 space-y-4 mt-1">
                                     <h1 className='text-2xl font-extrabold text-green-300 font-cursive'>{member.name}</h1>
                                     <h2 className='font-semibold text-white text-opacity-50'>{member.designation}</h2>
@@ -50,7 +50,7 @@ const TeamTrial = () => {
                                     <p className='text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, obcaecati.</p>
                                 </div>
                             </div>
-                            <div className='md:w-60 md:h-60 object-cover'>
+                            <div className='md:w-60 md:h-60 w-48 h-48 object-cover'>
                                 <img className="w-full h-full" src={member.Image} alt={member.name} />
                             </div>
                         </div>
@@ -62,10 +62,10 @@ const TeamTrial = () => {
                     {secondHalf.map((member) => (
                         <div key={member.id} className="flex justify-center items-center">
                             {/* "odd" layout: Text on the left, image on the right */}
-                            <div className='md:w-60 md:h-60 w-40 h-40 object-cover'>
+                            <div className='md:w-60 md:h-60 w-48 h-48 object-cover'>
                                 <img className="w-full h-full" src={member.Image} alt={member.name} />
                             </div>
-                            <div className="w-60 h-60 object-cover bg-[rgb(38,38,38)]">
+                            <div className="md:w-60 md:h-60 w-48 h-48 object-cover bg-[rgb(38,38,38)]">
                                 <div className="text-center text-white p-2 space-y-4 mt-1">
                                     <h1 className='text-2xl font-extrabold text-green-300 font-cursive'>{member.name}</h1>
                                     <h2 className='font-semibold text-white text-opacity-70'>{member.designation}</h2>
