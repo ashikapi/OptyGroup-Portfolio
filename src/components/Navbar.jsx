@@ -57,7 +57,7 @@ const Navbar = () => {
                   <ul className="flex flex-col bg-gray-600 mt-4 rounded-lg text-white font-semibold text-base list-none p-4 gap-3 absolute top-20 right-0 w-full md:w-auto md:hidden transition-all duration-300">
                     <li><NavLink onClick={() => setMenuOpen(false)} to="/home">Home</NavLink></li>
                     <li><NavLink onClick={() => setMenuOpen(false)} to="">Company</NavLink></li>
-                    <li><NavLink onClick={() => setMenuOpen(false)} to="">Portfolio</NavLink></li>
+                    <li><NavLink onClick={() => setMenuOpen(false)} to="/portfolio">Portfolio</NavLink></li>
                     <li><NavLink onClick={() => setMenuOpen(false)} to="/services">Services</NavLink></li>
                     <li><NavLink onClick={() => setMenuOpen(false)} to="/team">Teams</NavLink></li>
                     <li><NavLink onClick={() => setMenuOpen(false)} to="/contact">Contact Us</NavLink></li>

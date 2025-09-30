@@ -56,7 +56,7 @@ const PortfolioContant = () => {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`py-2 px-4 border ${
+              className={`md:py-2 md:px-4 px-2 py-1 md:-ml-0 md:-mr-0 -ml-0.5 -mr-0.5 border ${
                 index === 0 ? 'rounded-l-lg' : index === 4 ? 'rounded-r-lg' : ''
               } ${
                 activeCategory === category
