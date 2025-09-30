@@ -8,6 +8,7 @@ import BusinessTrial from './pageComponents/homeComponents/BusinessTrial'
 import AboutUs from './pageComponents/aboutComponents/AboutUs'
 import TeamTrial from './pageComponents/homeComponents/TeamTrial'
 import ContactTrial from './pageComponents/homeComponents/ContactTrial'
+import PortfolioTrial from './pageComponents/homeComponents/PortfolioTrial'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
     <BusinessTrial />
     <TeamTrial />
     <AboutUs />
+    <PortfolioTrial />
     <ContactTrial />
     </>
   )

@@ -16,34 +16,34 @@ const AboutUs = () => {
   };
 
   return (
-    <div className="bg-gray-200 py-16 px-8">
+    <div className="bg-gray-100 py-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col md:flex-row items-center justify-between">
           
           {/* Image and Story Section */}
-          <div className="w-full p-10 md:w-1/2 lg:w-2/5 mb-8 md:mb-0">
-            <img src={aboutInfo.logo} alt="About Logo" className="rounded-xl shadow-lg w-full h-auto object-cover" />
+          <div className="w-full md:w-1/2 lg:w-2/5 mb-8 md:mb-0">
+            <img src={aboutInfo.logo} alt="About Logo" className="rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out w-full h-auto object-cover" />
           </div>
 
-          <div className="w-full md:w-1/2 lg:w-3/5 p-10">
-            <h2 className="text-4xl font-extrabold text-[rgb(245,124,0)] gap-4 mb-4 flex items-center">
+          <div className="w-full md:w-1/2 lg:w-3/5 p-8 md:p-12">
+            <h2 className="text-4xl font-extrabold text-[rgb(245,124,0)] gap-4 mb-6 flex items-center hover:text-orange-600 transition-colors duration-300">
               {aboutInfo.title}
               <span><MdManageHistory /></span>
             </h2>
-            <p className="text-xl text-cyan-900 mb-6">{aboutInfo.text}</p>
+            <p className="text-lg text-cyan-900 mb-6 leading-relaxed">{aboutInfo.text}</p>
 
             {/* Mission and Vision */}
-            <div className="p-10 grid md:grid-cols-2 gap-8">
+            <div className="p-8 grid md:grid-cols-2 gap-8">
               {aboutInfo.mission.map((mission, index) => (
-                <div key={index} className="space-y-2 bg-white p-4 shadow-md rounded-md">
-                  <h3 className="text-xl font-extrabold text-[rgb(245,124,0)]">{mission.title}</h3>
-                  <p className="text-lg text-gray-500">{mission.text}</p>
+                <div key={index} className="space-y-4 bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-all duration-300 ease-in-out">
+                  <h3 className="text-2xl font-extrabold text-[rgb(245,124,0)]">{mission.title}</h3>
+                  <p className="text-lg text-gray-600">{mission.text}</p>
                 </div>
               ))}
               {aboutInfo.vision.map((vision, index) => (
-                <div key={index} className="space-y-2 bg-white p-4 shadow-md rounded-md">
-                  <h3 className="text-xl font-extrabold text-[rgb(245,124,0)]">{vision.title}</h3>
-                  <p className="text-lg text-gray-500">{vision.text}</p>
+                <div key={index} className="space-y-4 bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-all duration-300 ease-in-out">
+                  <h3 className="text-2xl font-extrabold text-[rgb(245,124,0)]">{vision.title}</h3>
+                  <p className="text-lg text-gray-600">{vision.text}</p>
                 </div>
               ))}
             </div>

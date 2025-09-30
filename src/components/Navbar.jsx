@@ -90,7 +90,7 @@ const Navbar = () => {
                           </div>
                         </li>
 
-                        <li className='hover:text-[rgb(245,124,0)]'>Portfolio</li>
+                        <li className='hover:text-[rgb(245,124,0)]'><NavLink to={'/portfolio'}>Portfolio</NavLink></li>
                         <li className='hover:text-[rgb(245,124,0)]'><NavLink to={'/services'}>Services</NavLink></li>
 
                         {/* Teams menu without dropdown */}

@@ -8,6 +8,7 @@ import Services from '../pages/Services'; // Importing Services page
 import ScrollToTop from '../components/ScrollToTop'; // Importing ScrollToTop component for auto scrolling
 import Blog from '../pages/Blog'; // Importing Blog page
 import Teams from '../pages/Teams'; // Importing Teams page
+import Portfolio from '../pages/Portfolio';
 
 const Routing = () => {
   return (
@@ -36,6 +37,9 @@ const Routing = () => {
 
           {/* Teams route */}
           <Route path='team' element={<Teams />} />
+
+          {/* portfolio route  */}
+          <Route path='portfolio' element={<Portfolio />} />
         </Route>
       </Routes>
     </div>
